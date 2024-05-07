@@ -6,35 +6,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Registro</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f3f4f6;
-            padding: 20px;
-        }
-
-        .max-w-4xl {
-            max-width: 600px;
-            margin: 0 auto; /* Para centrar el contenedor */
-        }
-
+        /* Estilos para centrar los títulos */
         h1,
         h2 {
             text-align: center;
         }
+
+        /* Estilos para las imágenes */
+        .image-left {
+            float: left;
+            margin-right: 10px;
+        }
+
+        .image-right {
+            float: right;
+            margin-left: 10px;
+        }
     </style>
 </head>
 
-<body class="bg-zinc-100 p-4 font-sans">
-    <div class="max-w-4xl mx-auto bg-white p-6 shadow rounded">
-        <div>
+<body>
+    <div class="max-w-4xl mx-auto">
+        <div class="flex justify-between items-center mb-6">
+            <img src="https://via.placeholder.com/100" alt="Left Image" class="image-left">
             <h1 class="text-xl font-bold">COLEGIO SAN JOSE DE GUANENTÁ</h1>
-            <p class="text-sm">Especialidad en Sistemas – 2024</p>
+            <img src="https://via.placeholder.com/100" alt="Right Image" class="image-right">
         </div>
-        <img src="https://placehold.co/100x100" alt="School Logo" class="h-16 w-16 mx-auto">
-        <h2 class="text-lg font-semibold mb-4">DATOS DEL ESTUDIANTE</h2>
+
+        <div>
+            <h2 class="text-lg font-semibold mb-4">DATOS DEL ESTUDIANTE</h2>
+            <form>
+                <div class="grid grid-cols-3 gap-4 mb-4">
+                    <div>
+                        <label>Nombre:</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Apellido:</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Fecha de nacimiento:</label>
+                        <input type="date">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-3 gap-4 mb-4">
+                    <div>
+                        <label>Teléfono Celular:</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>E-mail Personal:</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>E-mail Institucional:</label>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-3 gap-4 mb-4">
+                    <div>
+                        <label>Tipo de Sangre:</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>¿Sufre de alguna enfermedad?:</label>
+                        <select>
+                            <option value="Si">Si</option>
+                            <option value="No">No</option>
+                            <option value="Otra">Otra (Especifique)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Enfermedad:</label>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-3 gap-4 mb-4">
+                    <div>
+                        <label>Estrato Socioeconómico:</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Familias en Acción:</label>
+                        <select>
+                            <option value="Si">Si</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Tipo de Religión:</label>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-3 gap-4 mb-4">
+                    <div>
+                        <label>Relación Padres:</label>
+                        <select>
+                            <option value="Casados">Casados</option>
+                            <option value="Divorciados">Divorciados</option>
+                            <option value="Unión Libre">Unión Libre</option>
+                            <option value="Otros">Otros</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Detalles de la Relación:</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Computadora en Casa:</label>
+                        <select>
+                            <option value="Si">Si</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-3 gap-4 mb-4">
+                    <div>
+                        <label>Internet en Casa:</label>
+                        <select>
+                            <option value="Si">Si</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    <!-- Puedes agregar más campos aquí según sea necesario -->
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </div>
 </body>
 
 </html>
-
-
